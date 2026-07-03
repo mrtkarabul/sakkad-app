@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="tr" dir="ltr">
+<html lang="ru" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sakkad — Gizlilik Politikası</title>
+<title>Sakkad — Политика конфиденциальности</title>
 <link rel="alternate" hreflang="tr" href="https://mrtkarabul.github.io/sakkad-app/gizlilik.html">
 <link rel="alternate" hreflang="en" href="https://mrtkarabul.github.io/sakkad-app/en/privacy.html">
 <link rel="alternate" hreflang="de" href="https://mrtkarabul.github.io/sakkad-app/de/privacy.html">
@@ -19,18 +19,7 @@
 <link rel="alternate" hreflang="zh" href="https://mrtkarabul.github.io/sakkad-app/zh/privacy.html">
 <link rel="alternate" hreflang="ja" href="https://mrtkarabul.github.io/sakkad-app/ja/privacy.html">
 <link rel="alternate" hreflang="ko" href="https://mrtkarabul.github.io/sakkad-app/ko/privacy.html">
-<script>
-(function(){
-  try{
-    var L=["en","de","fr","es","it","pt","no","el","ru","ar","hi","zh","ja","ko"];
-    var saved=localStorage.getItem('sakkad.site.lang');
-    if(saved==='tr')return;
-    var c=(saved||navigator.language||'').toLowerCase().split('-')[0];
-    if(c==='nb'||c==='nn')c='no';
-    if(L.indexOf(c)>-1)location.replace('/sakkad-app/'+c+'/privacy.html');
-  }catch(e){}
-})();
-</script>
+
 <style>
   :root { color-scheme: dark; }
   body { background:#0a0a0d; color:#a1a3ad; font-family:-apple-system,"Segoe UI",Inter,Roboto,sans-serif;
@@ -56,10 +45,10 @@
 </style>
 </head>
 <body>
-<h1>sa<b>k</b>kad — Gizlilik Politikası</h1>
-<p class="sub">Son güncelleme: 3 Temmuz 2026</p>
+<h1>sa<b>k</b>kad — Политика конфиденциальности</h1>
+<p class="sub">Последнее обновление: 3 июля 2026 г.</p>
 <nav class="langs" aria-label="Language">
-    <span class="cur">Türkçe</span>
+    <a href="/sakkad-app/gizlilik.html" onclick="try{localStorage.setItem('sakkad.site.lang','tr')}catch(e){}">Türkçe</a>
     <a href="/sakkad-app/en/privacy.html" onclick="try{localStorage.setItem('sakkad.site.lang','en')}catch(e){}">English</a>
     <a href="/sakkad-app/de/privacy.html" onclick="try{localStorage.setItem('sakkad.site.lang','de')}catch(e){}">Deutsch</a>
     <a href="/sakkad-app/fr/privacy.html" onclick="try{localStorage.setItem('sakkad.site.lang','fr')}catch(e){}">Français</a>
@@ -68,30 +57,30 @@
     <a href="/sakkad-app/pt/privacy.html" onclick="try{localStorage.setItem('sakkad.site.lang','pt')}catch(e){}">Português</a>
     <a href="/sakkad-app/no/privacy.html" onclick="try{localStorage.setItem('sakkad.site.lang','no')}catch(e){}">Norsk</a>
     <a href="/sakkad-app/el/privacy.html" onclick="try{localStorage.setItem('sakkad.site.lang','el')}catch(e){}">Ελληνικά</a>
-    <a href="/sakkad-app/ru/privacy.html" onclick="try{localStorage.setItem('sakkad.site.lang','ru')}catch(e){}">Русский</a>
+    <span class="cur">Русский</span>
     <a href="/sakkad-app/ar/privacy.html" onclick="try{localStorage.setItem('sakkad.site.lang','ar')}catch(e){}">العربية</a>
     <a href="/sakkad-app/hi/privacy.html" onclick="try{localStorage.setItem('sakkad.site.lang','hi')}catch(e){}">हिन्दी</a>
     <a href="/sakkad-app/zh/privacy.html" onclick="try{localStorage.setItem('sakkad.site.lang','zh')}catch(e){}">简体中文</a>
     <a href="/sakkad-app/ja/privacy.html" onclick="try{localStorage.setItem('sakkad.site.lang','ja')}catch(e){}">日本語</a>
     <a href="/sakkad-app/ko/privacy.html" onclick="try{localStorage.setItem('sakkad.site.lang','ko')}catch(e){}">한국어</a>
   </nav>
-<h2>Özet</h2>
-<p>Sakkad hiçbir kişisel veri toplamaz. Hesap yoktur, analitik yoktur, reklam yoktur. Okuduğun her şey cihazında kalır.</p>
-<h2>Cihazında saklananlar</h2>
-<p>İçe aktardığın metinler, oluşturduğun klasörler, okuma ilerlemen ve uygulama ayarların yalnızca cihazının yerel depolamasında tutulur. Bu veriler bize veya üçüncü kişilere iletilmez, hiçbir sunucuya yedeklenmez.</p>
-<h2>İnternet erişimi</h2>
-<p>Sakkad tamamen çevrimdışı çalışır. Tek istisna, isteğe bağlı “Web'den içe aktar” özelliğidir: bu özelliği kullandığında girdiğin web adresi, sayfanın okunabilir metne dönüştürülmesi için Jina AI içerik servisine (r.jina.ai) iletilir. Bu istek kimliğinle ilişkilendirilmez ve yalnızca senin başlattığın anda gerçekleşir.</p>
-<p>Bu özelliği kullanmadığın sürece uygulama hiçbir ağ isteği yapmaz.</p>
-<h2>Üçüncü taraf hizmetler</h2>
-<p>Uygulamada analitik, reklam veya izleme amaçlı hiçbir üçüncü taraf yazılımı (SDK) bulunmaz.</p>
-<h2>Verilerin silinmesi</h2>
-<p>Metinlerini kütüphaneden istediğin zaman tek tek silebilirsin. Uygulamayı cihazından kaldırdığında tüm veriler kalıcı olarak silinir.</p>
-<h2>Çocukların gizliliği</h2>
-<p>Sakkad kişisel veri toplamadığı için çocuklara ait verilerin işlenmesi de söz konusu değildir.</p>
-<h2>Değişiklikler</h2>
-<p>Bu politika değişirse güncel sürümü uygulamanın yeni sürümüyle birlikte yayımlanır ve bu sayfadan ulaşılabilir.</p>
-<h2>İletişim</h2>
-<p>Sorular için: mrtkarabul@gmail.com</p>
+<h2>Коротко</h2>
+<p>Sakkad не собирает никаких персональных данных. Нет аккаунтов, нет аналитики, нет рекламы. Всё, что ты читаешь, остаётся на твоём устройстве.</p>
+<h2>Что хранится на устройстве</h2>
+<p>Импортированные тексты, созданные папки, прогресс чтения и настройки приложения хранятся только в локальном хранилище устройства. Эти данные не передаются нам или третьим лицам и не копируются ни на какие серверы.</p>
+<h2>Доступ в интернет</h2>
+<p>Sakkad работает полностью офлайн. Единственное исключение — необязательная функция «Импорт из веба»: при её использовании введённый веб-адрес передаётся сервису обработки контента Jina AI (r.jina.ai), чтобы преобразовать страницу в читаемый текст. Этот запрос не связывается с твоей личностью и выполняется только в тот момент, когда ты сам его запускаешь.</p>
+<p>Пока эта функция не используется, приложение не выполняет никаких сетевых запросов.</p>
+<h2>Сторонние сервисы</h2>
+<p>В приложении нет никаких сторонних компонентов (SDK) для аналитики, рекламы или отслеживания.</p>
+<h2>Удаление данных</h2>
+<p>Тексты можно в любой момент по одному удалять из библиотеки. При удалении приложения с устройства все данные удаляются безвозвратно.</p>
+<h2>Конфиденциальность детей</h2>
+<p>Поскольку Sakkad не собирает персональные данные, обработка данных детей также не происходит.</p>
+<h2>Изменения</h2>
+<p>Если эта политика изменится, обновлённая версия будет опубликована вместе с новой версией приложения и доступна на этой странице.</p>
+<h2>Контакты</h2>
+<p>По всем вопросам: mrtkarabul@gmail.com</p>
 <p><a class="btn" href="mailto:mrtkarabul@gmail.com">mrtkarabul@gmail.com</a></p>
 </body>
 </html>

@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="tr" dir="ltr">
+<html lang="it" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sakkad — Yardım ve Destek</title>
+<title>Sakkad — Aiuto e supporto</title>
 <link rel="alternate" hreflang="tr" href="https://mrtkarabul.github.io/sakkad-app/destek.html">
 <link rel="alternate" hreflang="en" href="https://mrtkarabul.github.io/sakkad-app/en/support.html">
 <link rel="alternate" hreflang="de" href="https://mrtkarabul.github.io/sakkad-app/de/support.html">
@@ -19,18 +19,7 @@
 <link rel="alternate" hreflang="zh" href="https://mrtkarabul.github.io/sakkad-app/zh/support.html">
 <link rel="alternate" hreflang="ja" href="https://mrtkarabul.github.io/sakkad-app/ja/support.html">
 <link rel="alternate" hreflang="ko" href="https://mrtkarabul.github.io/sakkad-app/ko/support.html">
-<script>
-(function(){
-  try{
-    var L=["en","de","fr","es","it","pt","no","el","ru","ar","hi","zh","ja","ko"];
-    var saved=localStorage.getItem('sakkad.site.lang');
-    if(saved==='tr')return;
-    var c=(saved||navigator.language||'').toLowerCase().split('-')[0];
-    if(c==='nb'||c==='nn')c='no';
-    if(L.indexOf(c)>-1)location.replace('/sakkad-app/'+c+'/support.html');
-  }catch(e){}
-})();
-</script>
+
 <style>
   :root { color-scheme: dark; }
   body { background:#0a0a0d; color:#a1a3ad; font-family:-apple-system,"Segoe UI",Inter,Roboto,sans-serif;
@@ -56,15 +45,15 @@
 </style>
 </head>
 <body>
-<h1>sa<b>k</b>kad — Yardım ve Destek</h1>
-<p class="sub">Kelime kelime, ışık hızında oku. · Sürüm 1.0.0</p>
+<h1>sa<b>k</b>kad — Aiuto e supporto</h1>
+<p class="sub">Leggi parola per parola, alla velocità della luce. · Versione 1.0.0</p>
 <nav class="langs" aria-label="Language">
-    <span class="cur">Türkçe</span>
+    <a href="/sakkad-app/destek.html" onclick="try{localStorage.setItem('sakkad.site.lang','tr')}catch(e){}">Türkçe</a>
     <a href="/sakkad-app/en/support.html" onclick="try{localStorage.setItem('sakkad.site.lang','en')}catch(e){}">English</a>
     <a href="/sakkad-app/de/support.html" onclick="try{localStorage.setItem('sakkad.site.lang','de')}catch(e){}">Deutsch</a>
     <a href="/sakkad-app/fr/support.html" onclick="try{localStorage.setItem('sakkad.site.lang','fr')}catch(e){}">Français</a>
     <a href="/sakkad-app/es/support.html" onclick="try{localStorage.setItem('sakkad.site.lang','es')}catch(e){}">Español</a>
-    <a href="/sakkad-app/it/support.html" onclick="try{localStorage.setItem('sakkad.site.lang','it')}catch(e){}">Italiano</a>
+    <span class="cur">Italiano</span>
     <a href="/sakkad-app/pt/support.html" onclick="try{localStorage.setItem('sakkad.site.lang','pt')}catch(e){}">Português</a>
     <a href="/sakkad-app/no/support.html" onclick="try{localStorage.setItem('sakkad.site.lang','no')}catch(e){}">Norsk</a>
     <a href="/sakkad-app/el/support.html" onclick="try{localStorage.setItem('sakkad.site.lang','el')}catch(e){}">Ελληνικά</a>
@@ -75,23 +64,23 @@
     <a href="/sakkad-app/ja/support.html" onclick="try{localStorage.setItem('sakkad.site.lang','ja')}catch(e){}">日本語</a>
     <a href="/sakkad-app/ko/support.html" onclick="try{localStorage.setItem('sakkad.site.lang','ko')}catch(e){}">한국어</a>
   </nav>
-<h2>Metin nasıl eklerim?</h2>
-<p>Kütüphane'de sağ alttaki + düğmesine ya da Oku sayfasındaki “Yeni metin ekle”ye dokun. PDF, Word (.docx), EPUB ve düz metin dosyalarını içe aktarabilir, bir web adresi girebilir veya panodaki metni yapıştırabilirsin.</p>
-<h2>Kaldığım yerden nasıl devam ederim?</h2>
-<p>İlerlemen otomatik kaydedilir. Oku sayfasındaki “Devam et” kartına ya da kütüphanedeki kitaba dokunman yeterli — okuma tam kaldığın kelimeden sürer.</p>
-<h2>Okuma hızını nasıl değiştiririm?</h2>
-<p>Okuma ekranında kelimeye dokununca açılan alttaki panelden hızı (WPM) ayarlayabilirsin. Kalıcı tercihlerini Ayarlar → Hız bölümünden de değiştirebilirsin. Yeni başlıyorsan 250–350 WPM iyi bir aralıktır.</p>
-<h2>Uzun kelimeler neden bölünüyor?</h2>
-<p>Yazı boyutu sabit tutulur; ekrana sığmayacak kadar uzun kelimeler okunabilirlik için tire ile parçalara ayrılır ve sırayla gösterilir. Yazı boyutunu küçültürsen bölünme azalır.</p>
-<h2>Görünümü nasıl kişiselleştiririm?</h2>
-<p>Ayarlar → Okuma görünümü bölümünden arkaplan, metin ve vurgu harfi renklerini, yazı tipini ve boyutunu seçebilirsin. Okuma renkleri uygulama temasından bağımsızdır.</p>
-<h2>Klasörler nasıl çalışır?</h2>
-<p>Kütüphanede + düğmesinden klasör oluşturabilirsin. Bir kitaba uzun basıp seçim moduna geç, ardından “Taşı” ile klasöre gönder. Klasörü silersen içindekiler kütüphaneye geri taşınır, silinmez.</p>
-<h2>Verilerim nerede saklanıyor?</h2>
-<p>Her şey yalnızca cihazında. Sakkad internet bağlantısı olmadan çalışır; metinlerin hiçbir sunucuya gönderilmez.</p>
-<h2>Sorun bildir / öneri</h2>
-<p>Bir hata mı buldun, aklında bir özellik mi var? Aşağıdaki adrese yazman yeterli — her mesaj okunur.</p>
+<h2>Come aggiungo un testo?</h2>
+<p>Nella Libreria tocca il pulsante + in basso a destra, oppure “Aggiungi nuovo testo” nella pagina Leggi. Puoi importare file PDF, Word (.docx), EPUB e di testo semplice, inserire un indirizzo web o incollare il testo dagli appunti.</p>
+<h2>Come riprendo da dove ero rimasto?</h2>
+<p>I tuoi progressi vengono salvati automaticamente. Ti basta toccare la scheda “Continua” nella pagina Leggi o il libro nella libreria — la lettura riprende esattamente dalla parola in cui eri rimasto.</p>
+<h2>Come cambio la velocità di lettura?</h2>
+<p>Nella schermata di lettura, tocca la parola per aprire il pannello in basso e regolare la velocità (WPM). Puoi cambiare le tue preferenze permanenti anche da Impostazioni → Velocità. Se sei alle prime armi, 250–350 WPM è un buon intervallo.</p>
+<h2>Perché le parole lunghe vengono divise?</h2>
+<p>La dimensione del testo resta fissa; le parole troppo lunghe per lo schermo vengono divise con un trattino e mostrate in sequenza, per restare leggibili. Se riduci la dimensione del testo, le divisioni diminuiscono.</p>
+<h2>Come personalizzo l'aspetto?</h2>
+<p>Da Impostazioni → Vista di lettura puoi scegliere i colori di sfondo, testo e lettera evidenziata, oltre al carattere e alla sua dimensione. I colori di lettura sono indipendenti dal tema dell'app.</p>
+<h2>Come funzionano le cartelle?</h2>
+<p>Nella libreria puoi creare una cartella con il pulsante +. Tieni premuto un libro per entrare in modalità selezione, poi usa “Sposta” per mandarlo in una cartella. Se elimini una cartella, i testi al suo interno tornano nella libreria: non vengono cancellati.</p>
+<h2>Dove vengono salvati i miei dati?</h2>
+<p>Tutto resta solo sul tuo dispositivo. Sakkad funziona senza connessione a internet; i tuoi testi non vengono inviati ad alcun server.</p>
+<h2>Segnala un problema / suggerimenti</h2>
+<p>Hai trovato un errore o hai in mente una nuova funzione? Ti basta scrivere all'indirizzo qui sotto — ogni messaggio viene letto.</p>
 <p><a class="btn" href="mailto:mrtkarabul@gmail.com">mrtkarabul@gmail.com</a></p>
-<p><a href="/sakkad-app/gizlilik.html">Gizlilik Politikası</a></p>
+<p><a href="privacy.html">Informativa sulla privacy</a></p>
 </body>
 </html>

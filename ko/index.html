@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="tr" dir="ltr">
+<html lang="ko" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sakkad — Kelime kelime, ışık hızında oku.</title>
+<title>Sakkad — 한 단어씩, 빛의 속도로 읽어요.</title>
 <link rel="alternate" hreflang="tr" href="https://mrtkarabul.github.io/sakkad-app/index.html">
 <link rel="alternate" hreflang="en" href="https://mrtkarabul.github.io/sakkad-app/en/index.html">
 <link rel="alternate" hreflang="de" href="https://mrtkarabul.github.io/sakkad-app/de/index.html">
@@ -19,18 +19,7 @@
 <link rel="alternate" hreflang="zh" href="https://mrtkarabul.github.io/sakkad-app/zh/index.html">
 <link rel="alternate" hreflang="ja" href="https://mrtkarabul.github.io/sakkad-app/ja/index.html">
 <link rel="alternate" hreflang="ko" href="https://mrtkarabul.github.io/sakkad-app/ko/index.html">
-<script>
-(function(){
-  try{
-    var L=["en","de","fr","es","it","pt","no","el","ru","ar","hi","zh","ja","ko"];
-    var saved=localStorage.getItem('sakkad.site.lang');
-    if(saved==='tr')return;
-    var c=(saved||navigator.language||'').toLowerCase().split('-')[0];
-    if(c==='nb'||c==='nn')c='no';
-    if(L.indexOf(c)>-1)location.replace('/sakkad-app/'+c+'/index.html');
-  }catch(e){}
-})();
-</script>
+
 <style>
   :root { color-scheme: dark; }
   body { background:#0a0a0d; color:#a1a3ad; font-family:-apple-system,"Segoe UI",Inter,Roboto,sans-serif;
@@ -58,9 +47,9 @@
 <body>
 <div class="home">
 <h1>sa<b>k</b>kad</h1>
-<p class="tag">Kelime kelime, ışık hızında oku.</p>
+<p class="tag">한 단어씩, 빛의 속도로 읽어요.</p>
 <nav class="langs" aria-label="Language">
-    <span class="cur">Türkçe</span>
+    <a href="/sakkad-app/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','tr')}catch(e){}">Türkçe</a>
     <a href="/sakkad-app/en/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','en')}catch(e){}">English</a>
     <a href="/sakkad-app/de/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','de')}catch(e){}">Deutsch</a>
     <a href="/sakkad-app/fr/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','fr')}catch(e){}">Français</a>
@@ -74,14 +63,14 @@
     <a href="/sakkad-app/hi/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','hi')}catch(e){}">हिन्दी</a>
     <a href="/sakkad-app/zh/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','zh')}catch(e){}">简体中文</a>
     <a href="/sakkad-app/ja/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','ja')}catch(e){}">日本語</a>
-    <a href="/sakkad-app/ko/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','ko')}catch(e){}">한국어</a>
+    <span class="cur">한국어</span>
   </nav>
-<p>Sakkad, kelimeleri tek tek ve gözünün odaklandığı noktada sabit tutarak okumanı hızlandıran bir RSVP (Rapid Serial Visual Presentation) okuyucusudur. Gözün satır boyunca sıçramadığı için dikkatin dağılmaz, okuma hızın kat kat artar.</p>
-<p>Adını, okurken gözün yaptığı sıçrama hareketinin bilimsel adından (sakkad) alır — bu uygulamanın ortadan kaldırdığı şeyden.</p>
-<p>Sakkad tamamen çevrimdışı çalışır: hesap yok, reklam yok, takip yok. Metinlerin yalnızca senin cihazında.</p>
+<p>Sakkad는 단어를 하나씩, 시선이 머무는 지점에 고정해서 보여 주며 읽기를 빠르게 만드는 RSVP(Rapid Serial Visual Presentation) 리더예요. 눈이 줄을 따라 도약하지 않기 때문에 집중력이 흐트러지지 않고, 읽기 속도가 몇 배로 빨라져요.</p>
+<p>이름은 읽을 때 눈이 하는 도약 운동의 과학 용어(사카드, saccade)에서 왔어요 — 바로 이 앱이 없애 주는 그 움직임이에요.</p>
+<p>Sakkad는 완전히 오프라인으로 작동해요: 계정 없음, 광고 없음, 추적 없음. 텍스트는 오직 내 기기 안에만 있어요.</p>
 <div class="links">
-  <a class="btn" href="/sakkad-app/destek.html">Yardım ve Destek</a>
-  <a class="btn" href="/sakkad-app/gizlilik.html">Gizlilik Politikası</a>
+  <a class="btn" href="support.html">도움말 및 지원</a>
+  <a class="btn" href="privacy.html">개인정보 처리방침</a>
 </div>
 </div>
 </body>

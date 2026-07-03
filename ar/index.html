@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="tr" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sakkad — Kelime kelime, ışık hızında oku.</title>
+<title>Sakkad — اقرأ كلمةً كلمة، بسرعة البرق.</title>
 <link rel="alternate" hreflang="tr" href="https://mrtkarabul.github.io/sakkad-app/index.html">
 <link rel="alternate" hreflang="en" href="https://mrtkarabul.github.io/sakkad-app/en/index.html">
 <link rel="alternate" hreflang="de" href="https://mrtkarabul.github.io/sakkad-app/de/index.html">
@@ -19,18 +19,7 @@
 <link rel="alternate" hreflang="zh" href="https://mrtkarabul.github.io/sakkad-app/zh/index.html">
 <link rel="alternate" hreflang="ja" href="https://mrtkarabul.github.io/sakkad-app/ja/index.html">
 <link rel="alternate" hreflang="ko" href="https://mrtkarabul.github.io/sakkad-app/ko/index.html">
-<script>
-(function(){
-  try{
-    var L=["en","de","fr","es","it","pt","no","el","ru","ar","hi","zh","ja","ko"];
-    var saved=localStorage.getItem('sakkad.site.lang');
-    if(saved==='tr')return;
-    var c=(saved||navigator.language||'').toLowerCase().split('-')[0];
-    if(c==='nb'||c==='nn')c='no';
-    if(L.indexOf(c)>-1)location.replace('/sakkad-app/'+c+'/index.html');
-  }catch(e){}
-})();
-</script>
+
 <style>
   :root { color-scheme: dark; }
   body { background:#0a0a0d; color:#a1a3ad; font-family:-apple-system,"Segoe UI",Inter,Roboto,sans-serif;
@@ -58,9 +47,9 @@
 <body>
 <div class="home">
 <h1>sa<b>k</b>kad</h1>
-<p class="tag">Kelime kelime, ışık hızında oku.</p>
+<p class="tag">اقرأ كلمةً كلمة، بسرعة البرق.</p>
 <nav class="langs" aria-label="Language">
-    <span class="cur">Türkçe</span>
+    <a href="/sakkad-app/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','tr')}catch(e){}">Türkçe</a>
     <a href="/sakkad-app/en/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','en')}catch(e){}">English</a>
     <a href="/sakkad-app/de/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','de')}catch(e){}">Deutsch</a>
     <a href="/sakkad-app/fr/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','fr')}catch(e){}">Français</a>
@@ -70,18 +59,18 @@
     <a href="/sakkad-app/no/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','no')}catch(e){}">Norsk</a>
     <a href="/sakkad-app/el/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','el')}catch(e){}">Ελληνικά</a>
     <a href="/sakkad-app/ru/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','ru')}catch(e){}">Русский</a>
-    <a href="/sakkad-app/ar/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','ar')}catch(e){}">العربية</a>
+    <span class="cur">العربية</span>
     <a href="/sakkad-app/hi/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','hi')}catch(e){}">हिन्दी</a>
     <a href="/sakkad-app/zh/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','zh')}catch(e){}">简体中文</a>
     <a href="/sakkad-app/ja/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','ja')}catch(e){}">日本語</a>
     <a href="/sakkad-app/ko/index.html" onclick="try{localStorage.setItem('sakkad.site.lang','ko')}catch(e){}">한국어</a>
   </nav>
-<p>Sakkad, kelimeleri tek tek ve gözünün odaklandığı noktada sabit tutarak okumanı hızlandıran bir RSVP (Rapid Serial Visual Presentation) okuyucusudur. Gözün satır boyunca sıçramadığı için dikkatin dağılmaz, okuma hızın kat kat artar.</p>
-<p>Adını, okurken gözün yaptığı sıçrama hareketinin bilimsel adından (sakkad) alır — bu uygulamanın ortadan kaldırdığı şeyden.</p>
-<p>Sakkad tamamen çevrimdışı çalışır: hesap yok, reklam yok, takip yok. Metinlerin yalnızca senin cihazında.</p>
+<p>Sakkad قارئ RSVP ‏(عرض بصري متسلسل سريع) يسرّع قراءتك بعرض الكلمات واحدة تلو الأخرى مع تثبيت نقطة تركيز عينك في مكان واحد. وبما أن عينك لا تقفز على طول السطر، لا يتشتت انتباهك وتتضاعف سرعة قراءتك.</p>
+<p>يستمد التطبيق اسمه من الاسم العلمي لحركة القفز التي تؤديها العين أثناء القراءة (saccade) — وهي بالضبط ما يتخلص منه هذا التطبيق.</p>
+<p>يعمل Sakkad دون اتصال بالإنترنت تمامًا: لا حساب، ولا إعلانات، ولا تتبع. نصوصك على جهازك وحده.</p>
 <div class="links">
-  <a class="btn" href="/sakkad-app/destek.html">Yardım ve Destek</a>
-  <a class="btn" href="/sakkad-app/gizlilik.html">Gizlilik Politikası</a>
+  <a class="btn" href="support.html">المساعدة والدعم</a>
+  <a class="btn" href="privacy.html">سياسة الخصوصية</a>
 </div>
 </div>
 </body>
